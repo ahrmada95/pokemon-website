@@ -24,11 +24,6 @@ const getPokeName = async (id) => {
     return name
 }
 
-const getPokeName = async (id) => {
-    let newNew = getPokeNameWAIT(id).then();
-    return newNew;
-}
-
 //get img url DOES NOT EXTRACT FROM API
 const getPokeImg = (id) => {
     //return interpolated string
