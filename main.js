@@ -9,7 +9,8 @@ class Pokemon {
     }
 };
 
-//DO NOT USE inner function to get pokemon name DO NOT USE
+
+//!!!DO NOT USE!!! inner function to get pokemon name !!!DO NOT USE!!!
 const getPokeNameWAIT = async (id) =>{
     let req = await fetch(`https://pokeapi.co/api/v2/pokemon/${id}`);
     let res = await req.json();
@@ -21,6 +22,11 @@ const getPokeName = async (id) => {
     console.log('getting name now')
     const name = await getPokeNameWAIT(id);
     return name
+}
+
+const getPokeName = async (id) => {
+    let newNew = getPokeNameWAIT(id).then();
+    return newNew;
 }
 
 //get img url DOES NOT EXTRACT FROM API
