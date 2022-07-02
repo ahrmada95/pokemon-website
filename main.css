@@ -1,0 +1,47 @@
+body {
+    font-family: sans-serif;
+}
+
+.header {
+    font-size: 100px;
+    text-align: center;
+    font-family: 'Pokemon Solid', sans-serif;
+}
+
+.pokemon-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+    position: relative;
+    transition: transform 0.1s;
+}
+
+.pokemon-card > img {
+    height: 300px;
+    width: 300px;
+}
+
+/*when user hovers over pokemon img it will expand slightly*/
+.pokemon-card:hover {
+    transform: scale(1.01);
+    border:5px solid dodgerblue;
+    cursor: pointer;
+}
+
+/*Change name and remove member buttons hidden by default*/
+.change-name {
+    display: none;
+}
+
+.remove-member {
+    display: none;
+}
+
+/*reveal buttons when user hovers over img
+.roster-img:hover + .change-name {
+    display: inline-block;
+}
+
+.roster-img:hover + .remove-member {
+    display: inline-block;
+}
